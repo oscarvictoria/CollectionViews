@@ -9,12 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+   
 
-
+    @IBAction func submit(_ sender: UIButton) {
+        let myDate = datePicker.date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        let date = myDate
+        dateFormatter.dateFormat = "YYYY-MM-DD"
+        let dateString = dateFormatter.string(from:date)
+        print(dateString)
+    }
+    
 }
 
