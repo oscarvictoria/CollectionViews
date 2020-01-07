@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewLayout key="collectionViewLayout" id="ALR-wN-OE5"/>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="nameCell" id="C5M-y2-XbP">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="nameCell" id="C5M-y2-XbP" customClass="CollectionCell" customModule="CollectionViews" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HH2-Xe-lXb">
@@ -43,6 +43,9 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="44"/>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="xM1-cS-E1x" id="B8p-b1-4dY"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
